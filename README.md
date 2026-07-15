@@ -16,7 +16,7 @@ r.raise_for_status()
 
 with open("journal.pntd.0012978.s006.xlsx", "wb") as f:
 
-    f.write(r.content)
+    f.write(r.content) # Add tab here
 
 df = pd.read_excel("journal.pntd.0012978.s006.xlsx")
 
