@@ -6,6 +6,18 @@ This is a basic and a quick analysis where machine learning models was developed
 
 import pandas as pd
 
+url = "https://journals.plos.org/plosntds/article/file?type=supplementary&id=10.1371/journal.pntd.0012978.s006"
+
+df = pd.read_excel(url)
+
+df.head()
+
+
+# or do this
+
+
+import pandas as pd
+
 import requests
 
 url = "https://journals.plos.org/plosntds/article/file?type=supplementary&id=10.1371/journal.pntd.0012978.s006"
@@ -21,3 +33,8 @@ with open("journal.pntd.0012978.s006.xlsx", "wb") as f:
 df = pd.read_excel("journal.pntd.0012978.s006.xlsx")
 
 df.head()
+
+
+
+
+
